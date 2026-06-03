@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "WAVE",
+    "slug": "wave-music",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.jpg",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/logo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wave.music"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.jpg",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.wave.music",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow WAVE to access the microphone for optional visualizers."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow WAVE to access your media to play local MP3 files.",
+          "savePhotosPermission": "Allow WAVE to save audio files.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c5efc33a-b028-455a-a68f-d79561d942ae"
+      }
+    }
+  }
+}
