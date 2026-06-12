@@ -1,3 +1,4 @@
+import "./global.css";
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, TouchableOpacity, Text, SafeAreaView, StatusBar } from 'react-native';
 import { Home, Library, Settings } from 'lucide-react-native';
